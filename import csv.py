@@ -80,8 +80,8 @@ def view_current_stock():
     avg_cost = (purchase_value / total_purchased) if total_purchased else 0
     stock_value = current_stock * avg_cost
 
-    print(f"\n📦 Current Stock: {current_stock} bags")
-    print(f"💰 Stock Value: ₹{stock_value:.2f}\n")
+    print(f"\n Current Stock: {current_stock} bags")
+    print(f" Stock Value: ₹{stock_value:.2f}\n")
 
 
 def view_profit_summary():
@@ -100,7 +100,7 @@ def view_profit_summary():
 
     profit = total_revenue - total_cost
 
-    print("\n📊 Profit Summary:")
+    print("\n   Profit Summary:")
     print(f"   Total Revenue: ₹{total_revenue:.2f}")
     print(f"   Total Cost: ₹{total_cost:.2f}")
     print(f"   Profit: ₹{profit:.2f}\n")
@@ -109,7 +109,7 @@ def view_profit_summary():
 def main():
     init_files()
     while True:
-        print("\n🌾 Rice Shop CLI Tracker")
+        print("\n Rice Shop CLI Tracker")
         print("1. Add Purchase Entry")
         print("2. Add Sale Entry")
         print("3. View Current Stock")
@@ -127,7 +127,7 @@ def main():
         elif choice == "4":
             view_profit_summary()
         elif choice == "5":
-            print("👋 Exiting... Goodbye!")
+            print(" Exiting... Goodbye!")
             break
         else:
             print("❌ Invalid choice, please try again.")
